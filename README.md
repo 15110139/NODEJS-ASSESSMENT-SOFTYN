@@ -24,7 +24,7 @@ This service should check how many donations a user has made and send them a spe
 ## 2: Create a high level design
 > Outline a high level design with all important components.
 
-![image](files/Users/jzhang/Desktop/system.png)
+![image](system.png)
 #### Explain
 - LamdaFunction: Include logic add user infor, donate from a user, check how many donation , send message.
 - Database: save user data, donation data,
@@ -91,7 +91,7 @@ createdAt:Date
 # 4: Scale the design
 > Identify and address bottlenecks, given the constraints.
 
-![image](files/Users/jzhang/Desktop/system-scale.png)
+![image](system-scale.png)
 
 - Use caching for caching data of user reduce time get and update data for user
 - Use message broker for async send sms when we have a lot of request the same time (bottleneck of sms service)
